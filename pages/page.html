@@ -20,8 +20,14 @@
           <i class="fa fa-bars"></i>
         </button>
         <a href="">
-          <h2>Mofty Car Dealership</h2>
+          <h2>Mofty Dealership</h2>
         </a>
+
+        <div class="links-head">
+        <a href="#">My Account</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
 
         <div>
           <a href="#">
@@ -48,20 +54,13 @@
 
     <!--Order section-->
     <main>
-      <div class="mini-sidebar"></div>
-      <div class="parent-box"></div>
+      <div class="mini-sidebar">
+        <input type="text" placeholder="Search for cars" />
+      </div>
+      <div class="parentbox"></div>
     </main>
 
-    <script>
-      const menubtn = document.getElementById("menubtn");
-      const close = document.getElementById("closebtn");
-      const navigation = document.getElementById("navigation");
-      menubtn.addEventListener("click", function () {
-        navigation.hidden = false;
-      });
-      closebtn.addEventListener("click", function () {
-        navigation.hidden = true;
-      });
-    </script>
+    <script src="/js/button.js"></script>
+    <script src="/js/cars.js"></script>
   </body>
 </html>
