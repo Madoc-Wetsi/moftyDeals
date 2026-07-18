@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('/images/5408994.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0;
+            margin: 0;
+        }
+        .hero{
+            background-color: rgba(0, 0, 0, 0.45);
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            
+        }
+        form{
+            backdrop-filter: blur(10px);
+            padding: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(255, 0, 150, 0.3);
+        }
+        form input{
+            padding: 8px;
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+        form input::placeholder{
+            color: rgba(255, 255, 255, 0.7);
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+   <div class="hero">
+    <form> 
+        <h1>Welcome Back</h1>
+        <br>
+        <input type="text" placeholder="first name">
+        <br>
+
+        <input type="number" placeholder="email">
+        <br>
+        <input type="text" placeholder="contact">
+        Already have an account?<a href="#">Login</a>
+        
+    </form>
+   </div>
+    
+</body>
+</html>

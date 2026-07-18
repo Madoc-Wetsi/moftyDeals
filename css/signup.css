@@ -1,0 +1,91 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 700px;
+  height: 300px;
+  box-shadow: 0px 0px 30px #dfb4b4ee;
+  animation: fadeInUp 0.8s ease-out forwards;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.page-exit-right {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.formside{
+  width: 350px;
+  height: 300px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+
+}
+.formside input{
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.formside input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.3);
+}
+
+.imageside{
+  width: 350px;
+  height: 300px;
+  background-color: rgb(2, 2, 56);
+  color: white;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top-right-radius: 70px;
+
+
+}
+.imageside a{
+  text-decoration: none;
+}
+.imageside a:hover{
+  text-decoration: underline;
+  color: red;
+}
+.loginbtn{
+  width: 40%;
+  height: 20%;
+  background-color: transparent;
+  border-radius: 30px;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: transform 0.35s ease, background-color 0.25s ease;
+}
+.loginbtn:hover{
+  background-color: white;
+  color: blue;
+  transform: scale(1.05);
+}
