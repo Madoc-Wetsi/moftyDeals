@@ -1,7 +1,7 @@
 const cars = [
   {
     id: 1,
-    image: "/images/fbe1070141e84aba9814540c63526bd0.jpg",
+    image: "../images/fbe1070141e84aba9814540c63526bd0.jpg",
     brand: "BMW",
     model: "M4 Competition",
     year: "2023",
@@ -11,7 +11,7 @@ const cars = [
 
   {
     id: 2,
-    image: "/images/5d1413fd436a407a93ae4ef1a381d6a5.jpg",
+    image: "../images/5d1413fd436a407a93ae4ef1a381d6a5.jpg",
     brand: "Toyota",
     model: "Corolla",
     year: "2024",
@@ -21,7 +21,7 @@ const cars = [
 
   {
     id: 3,
-    image: "/images/5b9567bf086e43439ac51eddd979f993.jpg",
+    image: "../images/5b9567bf086e43439ac51eddd979f993.jpg",
     brand: "Toyota",
     model: "Corolla",
     year: "2024",
@@ -31,7 +31,7 @@ const cars = [
 
   {
     id: 4,
-    image: "/images/027cca9c89814a32aa9d207e67ac66c6.jpg",
+    image: "../images/027cca9c89814a32aa9d207e67ac66c6.jpg",
     brand: "Audi",
     model: "A4",
     year: "2021",
@@ -41,7 +41,7 @@ const cars = [
 
   {
     id: 5,
-    image: "/images/1ec419384cc44543bf31ea692c83c8a2.jpg",
+    image: "../images/1ec419384cc44543bf31ea692c83c8a2.jpg",
     brand: "Mercedes-Benz",
     model: "C 200",
     year: "2022",
@@ -51,7 +51,7 @@ const cars = [
 
   {
     id: 6,
-    image: "/images/53ba5058cc054863a1c20989e1793605.jpg",
+    image: "../images/53ba5058cc054863a1c20989e1793605.jpg",
     brand: "Nissan",
     model: "GT-R",
     year: "2020",
@@ -61,7 +61,7 @@ const cars = [
 
   {
     id: 7,
-    image: "/images/5408994.jpg",
+    image: "../images/5408994.jpg",
     brand: "Honda",
     model: "Civic",
     year: "2023",
@@ -71,7 +71,7 @@ const cars = [
 
   {
     id: 8,
-    image: "/images/590814d79b7e4203b89e5fd775035097.jpg",
+    image: "../images/590814d79b7e4203b89e5fd775035097.jpg",
     brand: "Ford",
     model: "Mustang",
     year: "2022",
@@ -81,7 +81,7 @@ const cars = [
 
   {
     id: 9,
-    image: "/images/5b9567bf086e43439ac51eddd979f993.jpg",
+    image: "../images/5b9567bf086e43439ac51eddd979f993.jpg",
     brand: "Lexus",
     model: "ES 300h",
     year: "2021",
@@ -101,7 +101,7 @@ const cars = [
 
   {
     id: 11,
-    image: "/images/5dc7720481c648e683a36a4e06235ef9.jpg",
+    image: "../images/5dc7720481c648e683a36a4e06235ef9.jpg",
     brand: "Volkswagen",
     model: "Golf",
     year: "2023",
@@ -111,7 +111,7 @@ const cars = [
 
   {
     id: 12,
-    image: "/images/627226f8064746508792da3acfc39f69.jpg",
+    image: "../images/627226f8064746508792da3acfc39f69.jpg",
     brand: "BMW",
     model: "X5",
     year: "2022",
@@ -121,7 +121,7 @@ const cars = [
 
   {
     id: 13,
-    image: "/images/c0d119fa68aa4e8982c991c38d8f950f.jpg",
+    image: "../images/c0d119fa68aa4e8982c991c38d8f950f.jpg",
     brand: "Hyundai",
     model: "Tucson",
     year: "2021",
@@ -131,7 +131,7 @@ const cars = [
 
   {
     id: 14,
-    image: "/images/c8572bb1a01c4f92aaeafb581a346824.jpg",
+    image: "../images/c8572bb1a01c4f92aaeafb581a346824.jpg",
     brand: "Porsche",
     model: "911 Carrera",
     year: "2020",
@@ -141,7 +141,7 @@ const cars = [
 
   {
     id: 15,
-    image: "/images/e976b7987ea5487daa063ce6c3101585.jpg",
+    image: "../images/e976b7987ea5487daa063ce6c3101585.jpg",
     brand: "Kia",
     model: "Sportage",
     year: "2023",
@@ -151,7 +151,7 @@ const cars = [
 
   {
     id: 16,
-    image: "/images/f41c794b62f546b89d62a6c820e2f145.jpg",
+    image: "../images/f41c794b62f546b89d62a6c820e2f145.jpg",
     brand: "Chevrolet",
     model: "Camaro",
     year: "2021",
@@ -161,7 +161,7 @@ const cars = [
 
   {
     id: 17,
-    image: "/images/f41c794b62f546b89d62a6c820e2f1450001.jpg",
+    image: "../images/f41c794b62f546b89d62a6c820e2f1450001.jpg",
     brand: "Subaru",
     model: "Outback",
     year: "2022",
@@ -171,7 +171,7 @@ const cars = [
 
   {
     id: 18,
-    image: "/images/fbe1070141e84aba9814540c63526bd0.jpg",
+    image: "../images/fbe1070141e84aba9814540c63526bd0.jpg",
     brand: "Tesla",
     model: "Model 3",
     year: "2024",
@@ -181,7 +181,7 @@ const cars = [
 
   {
     id: 19,
-    image: "/images/ff9bf894da3c42c484715fdd78c483cb.jpg",
+    image: "../images/ff9bf894da3c42c484715fdd78c483cb.jpg",
     brand: "Range Rover",
     model: "Evoque",
     year: "2021",
@@ -191,7 +191,7 @@ const cars = [
 
   {
     id: 20,
-    image: "/images/futuristic-sports-car-Modern-car-Graphics-66382336-1.jpeg",
+    image: "../images/futuristic-sports-car-Modern-car-Graphics-66382336-1.jpeg",
     brand: "Jeep",
     model: "Wrangler",
     year: "2023",
