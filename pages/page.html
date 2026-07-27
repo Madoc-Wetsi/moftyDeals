@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Achish Dealership</title>
-    <link rel="stylesheet" href="../css/page.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -10,32 +9,27 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../css/page.css" />
+    <link rel="stylesheet" href="../css/header.css">
   </head>
 
   <body>
     <!--header section-->
     <header>
-      <div class="menu-cart">
-        <button class="menubtn" id="menubtn" title="click to open">
-          <i class="fa fa-bars"></i>
-        </button>
-        <a href="">
-          <h2>Mofty <span style="color: red;">Dealership</span></h2>
-        </a>
+            <h2>Mofty <span style="color: red;">Dealership</span></h2>
+            <div>
+            <a href="#">Home</a>
+            <a href="#">Cars</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">More</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+            </div>
 
-        <div class="links-head">
-        <a href="#">My Account</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
-
-        <div>
-          <a href="#">
-            <i class="fa fa-user"></i>
-          </a>
-        </div>
-      </div>
-    </header>
+        </header>
+      
 
     <!--navigational section-->
     <div class="navigation" id="navigation" hidden="">
@@ -56,6 +50,12 @@
     <main>
       <div class="mini-sidebar">
         <input type="text" placeholder="Search for cars" />
+        <button class="searchbtn">Search</button>
+        <h3>Filter by Price</h3>
+        <input type="number" placeholder="Min Price" />
+        <input type="number" placeholder="Max Price" />
+        <button class="filterbtn">Filter</button>
+        
       </div>
       <div class="parentbox"></div>
     </main>

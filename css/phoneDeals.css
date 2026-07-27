@@ -1,0 +1,143 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+main{
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(120deg, #007bff, #00bfff);
+  color: #fff;
+  padding: 60px 40px;
+  border-radius: 20px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.hero-text h2 {
+  font-size: 20px;
+  color: #FFD700;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #FFD700;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.products {
+  text-align: center;
+  padding: 40px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.how-it-works {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 250px;
+  margin: 10px;
+}
+
+.reviews {
+  text-align: center;
+  padding: 40px;
+}
+
+.footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: #FFD700;
+  text-decoration: none;
+}

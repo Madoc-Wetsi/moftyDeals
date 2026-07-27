@@ -28,27 +28,7 @@ body{
     z-index: 2;
 
 }
-header{
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    top: 0;
-    position: fixed;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-header a{
-    margin-right: 20px;
-    color: black;
-    text-decoration: none;
-    transition: color 0.25s ease, transform 0.25s ease;
-}
-header a:hover{
-    color: red;
-    text-decoration: underline;
-    transform: translateY(-2px);
-}
+
 .landing-text{
     height: 500px;
     width: 70%;
@@ -120,3 +100,22 @@ header a:hover{
     justify-content: space-around;
     
 }
+
+.checkoutbtn{
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.checkoutbtn:hover{
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
