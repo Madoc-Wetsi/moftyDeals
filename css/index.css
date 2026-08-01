@@ -1,121 +1,129 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    position: relative;
-    z-index: auto;
+﻿/* Global reset: keep sizing predictable across all elements */
+* {
+  box-sizing: border-box;
 }
-.topbox{
-    background-image: url("../images/pngwing.com\ \(7\).png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
+
+/* Base page styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #111;
+  background: #f4f5f7;
 }
+
+/* Page wrapper for the landing screen */
+.landing-page {
+  width: 100%;
+}
+
+/* Hero section with full-screen visual and centered content */
 .hero {
-    background-color: rgba(0, 0, 0, 0.7);
-    top: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: 2;
-
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background:
+    linear-gradient(180deg, rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.55)),
+    url("../images/Copilot_20260801_145608.png") center/cover no-repeat;
 }
 
-.landing-text{
-    height: 500px;
-    width: 70%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-}
-.info{ 
-    text-shadow: 5px 5px 10px rgb(70, 55, 55);
-    text-align: center;
-    padding: 20px;
-    animation: fadeInUp 1.5s ease forwards;
-}
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-
-    
-}
-.info h1 {
-    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-@keyframes tracking-in-expand{
-    0%{
-        letter-spacing: -05em;
-        opacity: 0;
-    }
-    40%{
-        opacity: 0.6;
-    }
-    100%{
-        opacity: 1;
-    }
+/* Transparent dark overlay to make white text easy to read */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
 }
 
-.explorebtn{
-    font-size: 20px;
-    background-color: blueviolet;
-    color: white;
-    text-decoration: none;
-    padding: 10px 30px 10px 30px;
-    border: none;
-    margin-top: 30px;
-    border-radius: 10px;
-    transition: all 0.5s;
-}
-.explorebtn:hover{
-    opacity: 0.8;
-    cursor: pointer;
-}
-.explorebtn:active{
-    background-color: blue;
-    color: white;
-}
-.footer{
-    width: 100%;
-    height: 500px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.footer .newcars{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    
+/* Content container inside the hero section */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 720px;
+  color: #fff;
 }
 
-.checkoutbtn{
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
+/* Small label above the headline */
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffd700;
 }
 
-.checkoutbtn:hover{
-    transform: scale(1.1);
+.hero-content h1 {
+  font-size: clamp(2.5rem, 4vw, 4.2rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.hero-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin: 0 auto 1.75rem;
+  max-width: 640px;
 }
 
+/* CTA buttons inside the hero */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-width: 160px;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.button-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.button-secondary:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.button-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Mobile adjustments for smaller screens */
+@media (max-width: 640px) {
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}

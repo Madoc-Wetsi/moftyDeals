@@ -10,6 +10,7 @@ body{
 .container{
   width: 700px;
   height: 300px;
+  border-radius: 30px;
   box-shadow: 0px 0px 30px #dfb4b4ee;
   animation: fadeInUp 0.8s ease-out forwards;
   transition: opacity 0.25s ease, transform 0.25s ease;
@@ -63,7 +64,7 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-top-right-radius: 70px;
+  border-radius: 30px;
 
 
 }
