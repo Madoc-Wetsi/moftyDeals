@@ -1,0 +1,197 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(233, 239, 241);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+/* body styles */
+
+main{
+  padding: 20px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.parentbox{
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 30px;
+}
+
+.parentbox::-webkit-scrollbar{
+  width: 1px;
+}
+
+.carshow{
+  width: 100%;
+  height: 100vh;
+  border-width: 1px;
+  border-style: dashed;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carshow div{
+  text-align: center;
+}
+
+.fa-car{
+  font-size: 100px;
+  color: grey;
+}
+
+.pheader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pheader select{
+  height: 30px;
+  width: 110px;
+  border-radius: 10px;
+}
+
+.left{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-grip, .fa-list{
+  font-size: 30px;
+}
+
+.mini-sidebar{
+  width: 30%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgb(233, 239, 241);
+  color: black;
+  box-shadow: 0px 0px 4px rgb(172, 148, 148);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head a{
+  text-decoration: none;
+  color: red;
+}
+
+.head a:hover{
+  text-decoration: underline;
+}
+
+.inputside{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputside div{
+  width: 100%;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+
+}
+
+.fa-search{
+  font-size: 20px;
+  width: 70px;
+  background-color: white;
+}
+
+.inputside input{
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.inputside select{
+  width: 100%;
+  height: 40px;
+  margin-right: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+.price input{
+  width: 100%;
+}
+
+.price input::-webkit-slider-runnable-track{
+  background: black;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.price input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: red;
+  border-radius: 50%;
+  margin-top: -6px;
+  cursor: pointer;
+}
+
+.bodyType div, .fuelType div{
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyType select, .fuelType select{
+  width: 100%;
+  height: 40px;
+  margin-right: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+
+.showbutton{
+  height: 40px;
+  background-color: rgb(145, 16, 16);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+
+ 

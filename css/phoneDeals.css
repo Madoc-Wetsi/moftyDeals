@@ -38,6 +38,10 @@ header a {
   font-size: clamp(0.85rem, 2vw, 1rem);
 }
 
+.fa-bars{
+  font-size: 25px;
+}
+
 main {
   margin-top: 150px;
   padding: 20px;
