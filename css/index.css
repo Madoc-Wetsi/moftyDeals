@@ -29,7 +29,7 @@ body {
   padding: 2rem;
   background:
     linear-gradient(180deg, rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.55)),
-    url("../images/Copilot_20260801_145608.png") center/cover no-repeat;
+    url("../images/Copilot_20260808_014010.png") center/cover no-repeat;
 }
 
 /* Transparent dark overlay to make white text easy to read */
@@ -89,10 +89,6 @@ body {
     opacity 0.25s ease,
     background-color 0.25s ease,
     color 0.25s ease;
-}
-
-.button-primary {
-  background: linear-gradient(135deg, #ff416c, #ff4b2b);
 }
 
 .button-secondary {
